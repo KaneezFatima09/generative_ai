@@ -5,7 +5,7 @@ The purpose of this project is to show the basics of adversarial training and ho
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 - **Generator (G):** Takes random noise (`z`) as input and outputs fake images resembling MNIST digits.
 - **Discriminator (D):** Takes an image (real or fake) and outputs a probability indicating whether it is real or generated.
 - **Training Process:**  
@@ -15,7 +15,7 @@ The purpose of this project is to show the basics of adversarial training and ho
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - Python 3
 - PyTorch
 - Torchvision
