@@ -1,23 +1,24 @@
-# Generative AI Projects
+# GAN on MNIST
 
-This repository contains my practice projects in Generative AI, including implementations of GANs, VAEs, Transformers, and other generative models.
+This repository contains an implementation of a **Generative Adversarial Network (GAN)** trained on the **MNIST dataset**.  
+The purpose of this project is to show the basics of adversarial training and how a generator can learn to create realistic handwritten digits from noise.
 
-## What is Generative AI?
+---
 
-Generative AI refers to deep learning models that can generate new data (such as images, text, or audio) by learning from existing data.
-Examples include:
+## 📌 Project Overview
+- **Generator (G):** Takes random noise (`z`) as input and outputs fake images resembling MNIST digits.
+- **Discriminator (D):** Takes an image (real or fake) and outputs a probability indicating whether it is real or generated.
+- **Training Process:**  
+  - The generator tries to fool the discriminator by producing realistic images.  
+  - The discriminator tries to correctly classify real vs. fake.  
+  - Both networks improve in a **minimax game** until the generator produces convincing samples.
 
-GANs (Generative Adversarial Networks) → generate realistic images/text.
+---
 
-VAEs (Variational Autoencoders) → learn compressed latent representations and generate new samples.
+## 🛠️ Technologies Used
+- Python 3
+- PyTorch
+- Torchvision
+- Matplotlib (for visualization)
 
-Transformers → generate sequences like text, music, or code.
-
-## Projects Included
-
-✅ GAN (MNIST) → Created my first GAN trained on handwritten digits. \
-⬜ DCGAN (CIFAR-10) → Deeper convolutional GAN for colored images. \
-⬜ VAE (Images) → Learn compressed latent representations. \
-⬜ Text Generation (Transformer/RNN) → Generate text sequences. 
-
-(I will keep adding more projects as I learn.)
+---
